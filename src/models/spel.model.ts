@@ -1,10 +1,10 @@
 export class Spel {
-  #namn: any;
-  #designer: any;
-  #utgivare: any;
-  #antalspelare: any;
-  #imgurl: any;
-  #beskrivning: any;
+  #namn: String;
+  #designer: String;
+  #utgivare: String;
+  #antalspelare: String;
+  #imgurl: String;
+  #beskrivning: String;
 
   constructor(nam: String, des: String, utg: String, ant: String, img: String, bes: String) {
     this.#namn = nam;
