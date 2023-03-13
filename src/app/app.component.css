@@ -1,0 +1,456 @@
+#main {
+  transition: margin-left .5s;
+  padding-left: 15px;
+  padding-bottom: 5%;
+}
+
+div {
+  display: block;
+}
+#gfgform{
+
+}
+body {
+  padding-top: 60px;
+  background-color: burlywood;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input[type=text],
+input[type=password] {
+  width: 50%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  box-shadow: #111;
+  color: rgb(31, 16, 16);
+  font-size: 14px;
+  background-color: rgb(241, 216, 186);
+  font-weight: bold;
+  border-width: 5px;
+  border-color: #111;
+  border-radius: 15px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: rgb(102, 100, 102);
+  opacity: 3;
+  text-align: center;
+  font-weight: bold;
+}
+
+p.centrerad {
+  text-align: center;
+}
+
+input[type=button] {
+  font-weight: bold;
+  border-width: 3px;
+  border-color: #111;
+  border-radius: 3px;
+  padding: 6px;
+  text-align: center;
+}
+
+.imgleft {
+  float: left;
+  width: 30%;
+  padding-left: 0px;
+  padding: 10px;
+}
+
+.imgright {
+  width: 30%;
+  float: right;
+  padding-left: 10px;
+  padding: 10px;
+}
+
+.knappar {
+  align-items: center;
+}
+
+.toolbar {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: aqua;
+}
+
+.överskrift {
+  top: 0;
+  height: 140px;
+  width: 100%;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  border-radius: 30px;
+  border-color: black;
+  background-color: chocolate;
+  box-shadow: 0px 5px 5px chocolate;
+  text-align: center;
+}
+
+/*=====  Överskriftsraden längst upp  =====*/
+.överskrift h1 {
+  font-family: Helvetica;
+  font-size: 45px;
+}
+
+/*=====  Text och bilder i mitten av hemsidan  =====*/
+.fields {
+  color: #2c2a2a;
+  padding-left: 45px;
+  padding-right: 4%;
+  margin-right: 3%;
+}
+
+.fields h2 {
+  font-weight: bolder;
+  font-size: 26px;
+  text-align: center;
+  font-family: Helvetica;
+  text-shadow: 2px 2px 5px #2c2a2a;
+}
+
+.fields p {
+  font-weight: bold;
+  padding-left: 6%;
+  padding-right: 6%;
+  font-family: Helvetica;
+}
+
+.fields form {
+  font-size: 18px;
+  font-style: italic;
+  font-family: Helvetica;
+}
+
+.fields img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-bottom: 0%;
+}
+
+/*=====  Formatering av de olika delarna av fields  =====*/
+.topP {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.midP {
+  display: inline-block;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*=====  Länkar kopplade till bilder  =====*/
+.piclink {
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0%;
+}
+
+.piclink a:hover {
+  color: #f1f1f1;
+  font-size: 24px;
+  transition: 0.5s;
+  text-shadow: 2px 2px 5px #2c2a2a;
+}
+
+.piclink a {
+  padding: 1px 1px 1px 1px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #2c2a2a;
+  display: block;
+  transition: 0.3s;
+}
+
+
+/*=====  skuggan till vänster som öppnar menyn  =====*/
+.menyskugga {
+  height: 100%;
+  width: 4%;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  box-shadow: 10px 0px 5px #111;
+}
+
+.högerkant {
+  height: 100%;
+  width: 7%;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  right: 0;
+  background-color: chocolate;
+  box-shadow: 0px 0px 5px 5px chocolate;
+}
+
+.nederkant {
+  height: 6%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0px;
+  right: 0;
+  background-color: chocolate;
+  box-shadow: 0px 0px 5px 5px chocolate;
+
+}
+
+.nederkant code {
+  color: black;
+  padding-top: 50%;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.nederkant marquee {
+  position: relative;
+  width: 15%;
+  left: 9%;
+  right: 100px;
+}
+
+/*=====  Sidomenyn till vänster  =====*/
+#sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0;
+  background-color: chocolate;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.5s;
+  box-shadow: 5px 5px 5px chocolate;
+}
+
+.sidenav a,
+.sidenav p {
+  padding: 2px 2px 2px 2px;
+  text-decoration: none;
+  font: Helvetica;
+  font-size: 30px;
+  color: #0f0f0f;
+  display: block;
+  transition: 0.3s;
+}
+
+p.link:hover {
+  color: #f1f1f1;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav img {
+  width: 90%;
+  height: auto;
+}
+
+p.link {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  cursor: pointer;
+}
+
+#sidenavtop {
+  padding-top: 40px;
+}
+
+#sidenavlowtop {
+  padding-top: 40px;
+}
+
+#sidenavlowbot {
+  padding-top: 40px;
+}
+
+span {
+  align-self: auto;
+}
+
+/* ===== Login ====== */
+.login {
+  padding-bottom: 5%;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.svar {
+  font-size: large;
+  color: brown;
+  font-weight: bold;
+}
+
+#login,
+#register {
+  display: none;
+}
+
+#välkommen {
+  display: block;
+}
+
+#kontakta {
+  display: none;
+}
+
+
+/* ===== Katter ===== */
+#elsa {
+  display: none;
+}
+
+#hugo {
+  display: none;
+}
+
+#tuva {
+  display: none;
+}
+
+#elsa2 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10%;
+  height: 50%;
+  width: auto;
+}
+
+#tuvaleft {
+  width: 20%
+}
+
+#struts {
+  width: 30%;
+}
+
+.katt.imgleft {
+  width: 30%;
+  padding-left: 4%;
+}
+
+.katt.imgright {
+  width: 20%;
+  padding-left: 6%;
+}
+
+.fields.katt {
+  font-size: 20;
+  font-weight: bold;
+}
+
+.katt em {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+}
+
+/* ===== Mig ===== */
+#sofia {
+  display: none;
+}
+
+#sofia img {
+  max-height: 500px;
+  width: auto;
+}
+
+#huset {
+  display: none;
+}
+
+#barnen {
+  display: none;
+}
+
+#mig {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-bottom: 0%;
+}
+
+/* ===== kontakt ===== */
+#kontakt {
+  height: 500px;
+  width: auto;
+}
+
+.kontakt {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.kontakt em {
+  text-shadow: #0f0f0f;
+  color: rgb(255, 210, 8);
+}
+
+.kontakt em:hover {
+  transition: 0.7s;
+  cursor: help;
+  color: red;
+  font-size: 45px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+  text-shadow: 2px 2px 5px #2c2a2a;
+}
+
+/* ===== brädspel ===== */
+#leftbrädspel {
+  float: left;
+  width:1%;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  top: 0px;
+  left: 0;
+}
+#rightbrädspel {
+
+  float:right;
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  right: 0;
+  border: #0f0f0f;
+}
+#rightbrädspel h3{
+  text-align: center;
+}
+#beskrivning p{
+  display: block;
+  padding-left: 15px;
+  padding-bottom: 5%;
+}
+
+#imgurl{
+  align-items: center;
+}
