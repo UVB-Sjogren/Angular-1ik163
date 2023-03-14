@@ -1,64 +1,15 @@
-<!DOCTYPE html>
-<html>
-<script type="text/javascript" src="../fil.js">
-</script>
-<div class="högerkant"></div>
-<div  class="nederkant"><marquee behavior="alternate" scrollamount = "5"><code id="pil"><-- Meny</code></marquee></div>
-<head>
-  <meta name="author">
-  <title>Viktors Hemsida-Inlogg</title>
-</head>
-
-<body>
 <header class="överskrift" class="överskrift">
   <img src="assets/svg/masthead.svg" >
 </header>
-<div class="login" id="main">
-  <div class="fields" id="välkommen">
-    <h2>Välkommen till min hemsida</h2>
-    <p>Här finner du information som jag valt att delge på denna magiska plats. Vad kan det vara tänker du?
-      Jo det får endast den som registrerar sig som användare och loggar in reda på. För att dölja denna
-      text och visa registrering eller inloggningfälten välj i menyn till vänster.</p>
-    <img id="struts" src="../assets/img/struts.jpg"><br>
-    <div class="piclink"><a href="https://sv.wikipedia.org/wiki/Musculus_longus_capitis">För mer information om det
-      som saknas</a>
-    </div>
-  </div>
+<div class="menyskugga" (mouseover)="openNav()"></div>>
+<div class="högerkant"></div>
+<div class="nederkant"><marquee behavior="alternate" scrollamount = "5"><code id="pil"><-- Meny</code></marquee></div>
+<app-sidenav>
+</app-sidenav>
+<router-outlet>
+</router-outlet>
 
-  <div class="fields" id="login">
-    <form>
-      <p>Vänligen logga in med registrerad användare i fälten nedan</p>
-      <label for="anv">Användarnamn:</label><br>
-      <input type="text" id="anv" name="anv" placeholder="Användare..."><br>
-      <label for="pass">Lösenord:</label><br>
-      <input type="password" id="pass" name="pass" placeholder="Lösenord..."><br>
-      <input type="button" value="skicka"(click)="checkLoginEntry()"></form>
-    <p class="svar" id="logsvar">--</p>
-  </div>
-  <div class="fields" id="register">
-    <form>
-      <p>Vänligen välj ett användarnamn och lösenord</p>
-      <label for="reganv">Användarnamn:</label><br>
-      <input type="text" id="reganv" name="reganv" placeholder="Användarnamn..."><br>
-      <label for="pass">Lösenord:</label><br>
-      <input type="password" id="regpass" name="regpass" placeholder="(8 tecken, 2 versal 1 siffra)"><br>
-      <label for="pass">Lösenord igen:</label><br>
-      <input type="password" id="regpassrep" name="regpassrep" placeholder="Samma som ovan"><br>
-      <input type="button" value="registrera" (click)="checkRegEntry()"></form><br>
-    <p class="svar" id="regsvar">--||--</p>
-  </div>
-  <div class="fields kontakt" id="kontakta">
-    <h2><b>Hur kan du då kontakta mig?</b></h2><img id="kontakt" src="../assets/img/kontakt.jpg"><div class="piclink"><a href="https://en.wikipedia.org/wiki/Academic_degree">För mer information om det
-    som saknas</a>
-  </div>
-    <p class="centrerad">Då jag är student på linneuniversitetet kan jag enklast nås genom min elevmail.<br>
-      <em>vs22br@student.lnu.se</em></p>
-  </div>
-</div>
-<div class="menyskugga"(mouseover)="openNav()" ></div>>
-</body>
 
-</html>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
